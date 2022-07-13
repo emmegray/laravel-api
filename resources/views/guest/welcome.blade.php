@@ -70,7 +70,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -91,7 +91,9 @@
                     Boolpress
                 </div>
 
-                <div id="app"></div>
+                <div id="app">
+                    <app-component />
+                </div>
             </div>
         </div>
     </body>
